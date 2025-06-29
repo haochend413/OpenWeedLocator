@@ -152,8 +152,7 @@ check_status "Virtualenv configuration" "VENV"
 reload_bashrc
 # Step 6: Create and configure the virtual environment
 echo -e "${GREEN}[INFO] Creating the 'owl' virtual environment...${NC}"
-#change: to 3.9; further change: change to the correct path
-mkvirtualenv --system-site-packages -p /usr/local/bin/python3.9 owl
+mkvirtualenv --system-site-packages -p python3 owl
 check_status "Creating virtual environment 'owl'" "VENV"
 
 sleep 1s
